@@ -1,68 +1,180 @@
-<!DOCTYPE html>
-
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <title> my blog </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Джонни Депп - Фан сайт</title>
     <style>
-        h1{
-            color: crimson;
-            font-family: Algerian;
-            text-align: center;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-        p, table {
-            color: indianred;
-            text-align: center;
-            font-family: Algerian;
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        
-        
-        ul {
-            padding-left: 47%;
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+            }
+
+                nav a:hover {
+                    background-color: #2980b9;
+                }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .main {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .film-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .film-list li {
+                background-color: #3498db;
+                color: white;
+                padding: 8px 12px;
+                margin-bottom: 8px;
+                border-radius: 3px;
+            }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
         }
     </style>
-
-</head> 
-
+</head>
 <body>
-    <h1>Привет! Как дела? Чего нового? Давай поговорим?)</h1>
-    <p> Я хочу рассказаь немного о себе и порекомендовать вам фильмы/сериалы! Меня зовут Софа мне 17) </p>
-    <p>Я учусь в средней школе номер один и перехожу в 11 класс </p>
-    <p>Мне нравится:</p>
-    <ul > 
-        <li>Заниматься 3д</li>
-        <li>Готовить</li>
-        <li>Смотреть фильмы и сериалы</li>
-    </ul>
-    <p>Мой любимый сериал называеться Сотня</p>
-    <p>
-        <img src="1736518309-sotnya-yoserial.webp" />
-    </p>
-    <p> <a href="https://the-100.online/"> Его можно посмотреть тут)</a></p>
-    <p>А вот подборка фильмов и сериалов, которые я рекомендую к просмотру)</p>
-    <table broder="1" align="center" width="25%" cellpadding="4">
-        <tr>
-            <th>ФИЛЬМЫ</th>
-            <th>СЕРИАЛЫ</th>
-        </tr>
+    <div class="container">
+        <header>
+            <h1>Джонни Депп</h1>
+            <p>Американский актёр, режиссёр, музыкант</p>
+        </header>
 
-        <tr>
-            <th>Поймай если сможешь</th>
-            <th>Волчoнок</th>
-        </tr>
-        <tr>
-            <th>Титаник</th>
-            <th>Сверхестественное</th>
-        </tr>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="films.html">Фильмы</a>
+            <a href="#">Галерея</a>
+            <a href="#">Контакты</a>
+        </nav>
 
-    </table>
+        <div class="content">
+            <div class="main">
+                <h2>О Джонни Деппе</h2>
+
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Johnny_Depp_Deauville_2019.jpg/330px-Johnny_Depp_Deauville_2019.jpg" alt="Джонни Депп">
+                </div>
+
+                <p>Джонни Депп — американский актёр, режиссёр, музыкант и продюсер. Он родился 9 июня 1963 года в Оуэнсборо, штат Кентукки.</p>
+
+                <p>Джонни Депп стал известен после выхода телесериала «21 Jump Street», где он играл молодого полицейского. Но настоящую славу ему принесли фильмы, где он играл необычных и эксцентричных персонажей.</p>
+
+                <p>Он много сотрудничал с режиссёром Тимом Бёртоном, снявшись в таких фильмах как «Эдвард Руки-ножницы», «Сонная Лощина», «Чарли и шоколадная фабрика», «Алиса в Стране чудес» и других.</p>
+
+                <p>Также он известен по роли капитана Джека Воробья в серии фильмов «Пираты Карибского моря».</p>
+            </div>
+
+            <div class="sidebar">
+                <h2>Быстрые факты</h2>
+
+                <p><strong>Дата рождения:</strong> 9 июня 1963</p>
+                <p><strong>Место рождения:</strong> Оуэнсборо, Кентукки, США</p>
+                <p><strong>Карьера:</strong> с 1984 года по настоящее время</p>
+
+                <h2>Лучшие фильмы</h2>
+                <ul class="film-list">
+                    <li>Пираты Карибского моря</li>
+                    <li>Эдвард Руки-ножницы</li>
+                    <li>Сонная Лощина</li>
+                    <li>Чарли и шоколадная фабрика</li>
+                    <li>Алиса в Стране чудес</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Сайт создан фанатом Джонни Деппа | 2025</p>
+        </footer>
+    </div>
 </body>
-
-
-
-
-
-
-
-
 </html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <title>Фильмы Джонни Деппа</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+            }
+
+                nav a:hover {
+                    background-color: #2980b9;
+                }
+
+        .film {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .film-content {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .film-image {
+            flex: 1;
+        }
+
+        .film-info {
+            flex: 2;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .film-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Фильмы Джонни Деппа</h1>
+            <p>Лучшие роли и performances</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="films.html">Фильмы</a>
+            <a href="#">Галерея</a>
+            <a href="#">Контакты</a>
+        </nav>
+
+        <div class="film">
+            <h2>Пираты Карибского моря</h2>
+            <div class="film-content">
+                <div class="film-image">
+                    <img src="https://image.spletnik.ru/resize/fit=contain,gravity=0.5x0.5,format=auto,width=1011,height=700/https://images.spletnik.ru/i/s/slWXusvHDF/original.jpg" alt="Пираты Карибского моря">
+                </div>
+                <div class="film-info">
+                    <p><strong>Год:</strong> 2003</p>
+                    <p><strong>Режиссер:</strong> Гор Вербински</p>
+                    <p><strong>Роль:</strong> Капитан Джек Воробей</p>
+                    <p>Капитан Джек Воробей должен спасти город и свою душу, сражаясь с пиратами-призраками.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="film">
+            <h2>Эдвард Руки-ножницы</h2>
+            <div class="film-content">
+                <div class="film-image">
+                    <img src="https://24smi.org/public/media/resize/800x-/2017/11/23/01_G3WaiP3.jpg" alt="Эдвард Руки-ножницы">
+                </div>
+                <div class="film-info">
+                    <p><strong>Год:</strong> 1990</p>
+                    <p><strong>Режиссер:</strong> Тим Бёртон</p>
+                    <p><strong>Роль:</strong> Эдвард Руки-ножницы</p>
+                    <p>История человека с ножницами вместо рук, который пытается найти свое место в мире.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="film">
+            <h2>Чарли и шоколадная фабрика</h2>
+            <div class="film-content">
+                <div class="film-image">
+                    <img src="https://www.tvoybro.com/uploads/affiche/event/image/5dc1713febf5c90285000000/preview_59d60379-ff25-4a84-8b4a-587891874e5d.jpg" alt="Чарли и шоколадная фабрика">
+                </div>
+                <div class="film-info">
+                    <p><strong>Год:</strong> 2005</p>
+                    <p><strong>Режиссер:</strong> Тим Бёртон</p>
+                    <p><strong>Роль:</strong> Вилли Вонка</p>
+                    <p>Эксцентричный владелец шоколадной фабрики устраивает экскурсию для детей.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Сайт создан фанатом Джонни Деппа | 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
